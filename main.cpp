@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int findThree(int[][] matrix) { //not sure if this is the right syntax
+int findThree(int[][] matrix) { 
 	int count = 0;
 
 	for (int i = 0; i < 4, i++) {
