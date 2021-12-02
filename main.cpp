@@ -118,6 +118,18 @@ int main(int argc, char *arv[])
 		cout<<"Error: Invalid command"<<endl;
 	}
 	
-
+	int findMe;
+	cout << "Please enter a length (2 or 3): ";
+	cin >> findMe;
+	
+	int answer;
+	
+	if(findMe == 2) {
+		//answer = 	
+	}
+	if(findMe == 3) {
+		answer = findThree();	
+	}
+	cout << "The answer is " << answer;
 	return 0;
 }
