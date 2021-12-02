@@ -12,7 +12,7 @@ int findThree(int[][] matrix) { //not sure if this is the right syntax
 				for (int k = 0; k < 4; k++) {
 					if (i == k) {}
 					else if (j == k) {}
-					else if (matrix[j][k] == 1)
+					else if (matrix[j][k] == 1) {
 						for (int m = 0; m < 4; m++) {
 							if (i == m) {}
 							else if (j == m) {};
@@ -20,12 +20,31 @@ int findThree(int[][] matrix) { //not sure if this is the right syntax
 							else if (matrix[k][m] == 1)
 								count++;
 						}
+					}
 				}
 			}
 
 		}
 
 	}
+	return count;
+}
+
+int findTwo(int[][] matrix) {
+	int count = 0;	
+	for (int i = 0; i < 4, i++) {
+		for (int j = 0; j < 4; j++) {
+			if (matrix[i][j] == 1) {
+				for (int k = 0; k < 4; k++) {
+					if (i == k) {}
+					else if (j == k) {}
+					else if (matrix[j][k] == 1) {
+						count++;
+					}
+				}
+			}
+		}
+	}	
 	return count;
 }
 
@@ -125,9 +144,9 @@ int main(int argc, char *arv[])
 	int answer;
 	
 	if(findMe == 2) {
-		//answer = 	
+		answer = fintTwo();
 	}
-	if(findMe == 3) {
+	else if(findMe == 3) {
 		answer = findThree();	
 	}
 	cout << "The answer is " << answer;
