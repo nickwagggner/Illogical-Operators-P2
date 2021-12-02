@@ -10,14 +10,14 @@ int findThree(int[][] matrix) { //not sure if this is the right syntax
 		for (int j = 0; j < 4; j++) {
 			if (matrix[i][j] == 1) {
 				for (int k = 0; k < 4; k++) {
-					if (i == k) break;
-					if (j == k) break;
-					if (matrix[j][k] == 1)
+					if (i == k) {}
+					else if (j == k) {}
+					else if (matrix[j][k] == 1)
 						for (int m = 0; m < 4; m++) {
-							if (i == m) break;
-							if (j == m) break;
-							if (k == m) break;
-							if (matrix[k][m] == 1)
+							if (i == m) {}
+							else if (j == m) {};
+							else if (k == m) {};
+							else if (matrix[k][m] == 1)
 								count++;
 						}
 				}
